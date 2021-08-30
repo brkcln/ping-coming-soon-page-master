@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	background: #ffffff;
+	color: rgb(0, 0, 0);
+	-webkit-font-smoothing: antialiased;
+	min-height: 100%;
+	font-size: 1.25rem;
+	font-family: "Libre Franklin", sans-serif;
+}
+
+button {
+	cursor: pointer;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* ------------------
+General
+--------------------*/
+.container {
+	width: 80%;
+	max-width: 1140px;
+	margin: 0 auto;
+	text-align: center;
+}
+h1 {
+	font-weight: lighter;
+	color: hsl(0, 0%, 59%);
+}
+strong {
+	color: black;
+}
+h2 {
+	font-weight: lighter;
+	font-size: 1.1rem;
+}
+ul {
+	list-style: none;
+}
+.hidden {
+	display: none;
+}
+/* ------------------
+main
+--------------------*/
+main {
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.hero__image {
+	max-width: 50%;
+	margin: 2em auto 1em;
+}
+.hero__logo {
+	margin-bottom: 1.5em;
+}
+/* ------------------
+form
+--------------------*/
+form {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 1.2em;
+}
+small {
+	padding: 0.7em 0 1em 2em;
+	text-align: left;
+	font-size: 0.7rem;
+	color: hsl(354, 100%, 66%);
+}
+.hero__form {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.form__email-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+input {
+	padding: 1em 10em 1em 1.5em;
+	border: 1px solid rgba(0, 0, 0, 0.226);
+	text-align: left;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-ms-border-radius: 150px;
+	-o-border-radius: 150px;
+}
+.form__button {
+	border-radius: 150px;
+	padding: 1em 4em;
+	border: none;
+	background: hsl(223, 87%, 63%);
+	color: white;
+	margin-left: 0.5em;
+}
+.form__button:hover {
+	background: hsla(223, 87%, 63%, 0.836);
+}
+/* ------------------
+footer
+--------------------*/
+footer {
+	text-align: center;
+	height: 10vh;
+}
+footer p {
+	font-size: 0.8rem;
+}
+i {
+	color: hsl(223, 87%, 63%);
+	padding: 0.4em;
+}
+i:hover {
+	color: white;
+	background: hsl(223, 87%, 63%);
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	cursor: pointer;
+}
+.footer__list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0.7em;
+}
+.footer__list li {
+	margin-right: 1.5em;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+}
+@media all and (max-width: 883px) {
+	.form__button {
+		width: 100%;
+	}
+	.form__email-container {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	input {
+		width: 100%;
+		padding: 1em 1em;
+	}
+}
